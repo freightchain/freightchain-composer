@@ -22,6 +22,11 @@ participant Broker identified by brokerId {
   o String MCNumber
 }
 
+participant Factor identified by factorId {
+  o String factorId
+  o String name
+}
+
 participant Shipper identified by shipperId {
   o String shipperId
   o String name
