@@ -44,7 +44,7 @@ concept LoadStop {
   o DateTime scheduledStart
   o DateTime scheduledEnd optional
   o String street1
-  o String street2
+  o String street2 optional
   o String city
   o String state
   o String zipcode
