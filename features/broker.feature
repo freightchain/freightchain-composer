@@ -26,24 +26,18 @@ Feature: Broker
                 "origin": {
                   "$class":"com.loadblockchain.LoadStop",
                   "scheduledStart": "2017-07-01::00:00:00",
-                  "address": {
-                    "$class":"com.loadblockchain.Address",
-                    "street1": "6003 McComas",
-                    "city": "Dallas",
-                    "state": "Texas",
-                    "zipcode": "75206"
-                  }
+                  "street1": "6003 McComas",
+                  "city": "Dallas",
+                  "state": "Texas",
+                  "zipcode": "75206"
                 },
                 "destination": {
                   "$class":"com.loadblockchain.LoadStop",
                   "scheduledStart": "2017-07-01::00:00:00",
-                  "address": {
-                    "$class":"com.loadblockchain.Address",
-                    "street1": "6003 McComas",
-                    "city": "Dallas",
-                    "state": "Texas",
-                    "zipcode": "75206"
-                  }
+                  "street1": "6003 McComas",
+                  "city": "Dallas",
+                  "state": "Texas",
+                  "zipcode": "75206"
                 }
               },
               {
@@ -55,24 +49,18 @@ Feature: Broker
                 "origin": {
                   "$class":"com.loadblockchain.LoadStop",
                   "scheduledStart": "2017-07-01::00:00:00",
-                  "address": {
-                    "$class":"com.loadblockchain.Address",
-                    "street1": "6003 McComas",
-                    "city": "Dallas",
-                    "state": "Texas",
-                    "zipcode": "75206"
-                  }
+                  "street1": "6003 McComas",
+                  "city": "Dallas",
+                  "state": "Texas",
+                  "zipcode": "75206"
                 },
                 "destination": {
                   "$class":"com.loadblockchain.LoadStop",
                   "scheduledStart": "2017-07-01::00:00:00",
-                  "address": {
-                    "$class":"com.loadblockchain.Address",
-                    "street1": "6003 McComas",
-                    "city": "Dallas",
-                    "state": "Texas",
-                    "zipcode": "75206"
-                  }
+                  "street1": "6003 McComas",
+                  "city": "Dallas",
+                  "state": "Texas",
+                  "zipcode": "75206"
                 }
               }
             ]
@@ -92,24 +80,18 @@ Feature: Broker
               "origin": {
                 "$class":"com.loadblockchain.LoadStop",
                 "scheduledStart": "2017-07-01::00:00:00",
-                "address": {
-                  "$class":"com.loadblockchain.Address",
-                  "street1": "6003 McComas",
-                  "city": "Dallas",
-                  "state": "Texas",
-                  "zipcode": "75206"
-                }
+                "street1": "6003 McComas",
+                "city": "Dallas",
+                "state": "Texas",
+                "zipcode": "75206"
               },
               "destination": {
                 "$class":"com.loadblockchain.LoadStop",
                 "scheduledStart": "2017-07-01::00:00:00",
-                "address": {
-                  "$class":"com.loadblockchain.Address",
-                  "street1": "6003 McComas",
-                  "city": "Dallas",
-                  "state": "Texas",
-                  "zipcode": "75206"
-                }
+                "street1": "6003 McComas",
+                "city": "Dallas",
+                "state": "Texas",
+                "zipcode": "75206"
               }
             }
             """
@@ -123,27 +105,18 @@ Feature: Broker
               "origin": {
                 "$class":"com.loadblockchain.LoadStop",
                 "scheduledStart": "2017-07-01::00:00:00",
-                "address": {
-                  "$class":"com.loadblockchain.Address",
-                  "street1": "6003 McComas",
-                  "city": "Dallas",
-                  "state": "Texas",
-                  "zipcode": "75206"
-                }
+                "street1": "6003 McComas",
+                "city": "Dallas",
+                "state": "Texas",
+                "zipcode": "75206"
               },
               "destination": {
                 "$class":"com.loadblockchain.LoadStop",
                 "scheduledStart": "2017-07-01::00:00:00",
-                "address": {
-                  "$class":"com.loadblockchain.Address",
-                  "street1": "6003 McComas",
-                  "city": "Dallas",
-                  "state": "Texas",
-                  "zipcode": "75206"
-                }
+                "street1": "6003 McComas",
+                "city": "Dallas",
+                "state": "Texas",
+                "zipcode": "75206"
               }
             }
             """
-
-
-
