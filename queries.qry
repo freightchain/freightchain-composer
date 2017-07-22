@@ -1,0 +1,5 @@
+query Q1{
+  description: "Select all LoadDeliveries."
+  statement:
+      SELECT com.loadblockchain.Load
+}

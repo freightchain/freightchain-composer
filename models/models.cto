@@ -60,6 +60,11 @@ asset Load identified by loadId {
   o LoadState state default = "PENDING" optional
   o LoadStop origin
   o LoadStop destination
+  o CancellationReason cancellationReason
+  o String cancellationComments
+  o DateTime canceledAt
+  o DateTime pickedUpAt
+  o DateTime deliveredAt
   --> Shipper shipper
   --> Broker broker optional
   --> Carrier carrier optional
