@@ -1,0 +1,103 @@
+/**
+ * Sample business network definition.
+ */
+namespace com.loadblockchain
+
+enum LoadState {
+  o PENDING
+  o IN_TRANSIT
+  o CANCELED
+  o DELIVERED
+}
+
+enum CancellationReason {
+  o TRAFFIC_ACCIDENT
+  o FRAUD
+  o CARGO_STOLEN
+}
+
+participant Broker identified by brokerId {
+  o String brokerId
+  o String name
+  o String MCNumber
+}
+
+participant Shipper identified by shipperId {
+  o String shipperId
+  o String name
+}
+
+participant Carrier identified by carrierId {
+  o String carrierId
+  o String name
+  o String MCNumber
+}
+
+
+enum ImageType {
+  o RATE_CONFIRM
+  o BOL
+  o INVOICE
+}
+
+concept LoadStop {
+  o DateTime scheduledStart
+  o DateTime scheduledEnd optional
+  o String street1
+  o String street2
+  o String city
+  o String state
+  o String zipcode
+}
+
+asset Load identified by loadId {
+  o String loadId
+  o LoadState state default = "PENDING" optional
+  o LoadStop origin
+  o LoadStop destination
+  --> Shipper shipper
+  --> Broker broker optional
+  --> Carrier carrier optional
+  --> LoadImage[] loadImages optional
+}
+
+asset LoadImage identified by loadImageId {
+  o String loadImageId
+  o String imageUrl
+  o ImageType imageType
+  --> Load load
+  --> Broker broker optional
+  --> Carrier carrier optional
+}
+
+
+asset LoadRate identified by loadRateId{
+  o String loadRateId
+  --> Load load
+  --> Broker broker optional
+  --> Carrier carrier optional
+  --> Shipper shipper optional
+  o Double rate
+}
+
+/**
+* FreightChain transactions
+*/
+
+transaction LoadPickup {
+  --> Load load
+  o DateTime occurredAt
+}
+
+transaction LoadCancellation {
+  --> Load load
+  o CancellationReason reason
+  o String comments optional
+  o DateTime occurredAt
+}
+
+transaction LoadDelivery {
+  --> Load load
+  o String comments optional
+  o DateTime occurredAt
+}
