@@ -66,8 +66,7 @@
     "exclude": [
       "coverage/**",
       "features/**",
-      "out/**",
-      "test/**"
+      "out/**"
     ],
     "reporter": [
       "text-summary",
